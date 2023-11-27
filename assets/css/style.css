@@ -1,0 +1,454 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL: 
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #fff;
+    color: #0099aa;
+    text-shadow: none;
+}
+
+::selection {
+    background: #f44;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: transparent;
+	border-top: 5px solid #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/head.jpg) no-repeat center top fixed;
+	margin-top: 0px;
+	padding-top: 250px;
+	text-align:Left;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.aleft{text-align: left !important;font-size: 18px;padding-left: 20px;}
+.aleft img{width: 90%; padding-top: 20px;}
+.red{color: #f44;}
+
+#why {
+	background: #444 url(../img/bucket2.jpg) no-repeat center top fixed;
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align:Left;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#google{
+	background: #444;
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align:Left;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#w{
+	background:url(../img/head.jpg) no-repeat center top fixed;
+	padding-top: 60px;
+	color: white;
+	height: 600px;
+
+	}
+
+#w2{
+	background:rgba(20,20,20,0.7);
+	margin-top: 0px;
+	padding-top: 0px;
+	color: white;
+	}
+
+#w2 h1{
+
+	color: #fff;
+	}
+	
+#w h1{
+
+	color: #e44
+	}
+
+
+.price {
+	font-weight: 700;
+    color: #4a4a4a;
+	font-size: 24px;
+	margin-top:10px;
+	z-index:1;
+}
+a:hover{
+	text-decoration:none;
+}
+		
+a:hover .button{
+	visibility:visible;
+	text-decoration:none;
+}
+	
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
+}
+
+#social i:hover {
+	color: #49f;
+}
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #2f2f2f;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+#workwrap {	
+	background: url(../img/work.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {	
+	background: url(../img/about.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.principles{}
+.principles img{width: 170px;margin-left:30%}
+.button{
+	width:150px; padding: 15px;background:#e44;border-radius: 5px;
+}
+.button_w{
+	padding: 12px 25px 12px 25px;background:#fff;border-radius: 5px;color:#1086b0;
+}
+
+
+.button_w a:hover{
+	color:#fff;
+	background:#00cccc;
+}
+a:hover .button_w{
+	color:#fff;
+	background:#00cccc;
+	    transition: all 300ms linear 0s;
+}
+
+
+.button_r{
+	width:400px; padding: 12px 25px 12px 25px;background:none;border: 2px solid #e44;color:#e44;letter-spacing:20px;	font-weight: bold;
+}
+
+.button_r2{
+	font-size: 13px;width:250px; padding: 8px 15px 8px 15px;background:none;border: 2px solid #e44;color:#e44;letter-spacing:6px;	font-weight: bold;
+}
+ a:hover .button_r{
+	color:#fff;
+	background:#e44;
+}
+
+.icons {width: 30%;color:white;height: 200px;margin-left: 25px;}
+.icons h4{color:white;}
+
+.logo{
+	font-size: 24px;
+	margin-top:10px;
+	}
+.description{
+		font-size: 14px;
+color: #f44;
+margin-top:-15px !important;		
+	}
+	
+.bluetext {color: #e44;}	
+
+.newClass{
+width: 100px;
+float: left;
+font-size:38px;
+color:white;
+text-align:center;
+}	
+	
+	
+/* Gallery */
+.gallery {
+
+margin-left: -30px;
+
+}
+.gallery img{
+	margin-top: 30px;
+	z-index:2;
+
+}
+.gallery img:hover {
+	opacity: 0.4;
+}
+.gallery h4 {
+	color:white;
+}
+.bgcover{
+  display: block;
+  max-width: 100%;
+  height: 200px;
+}
+.top_spec_all{
+	height: 305px;
+}
+
+.top_spec{
+	margin-left:-2px;
+}
+a:link .top_spec{
+	height: 100px;
+	color: #930;
+}
+
+a:link .top_spec img{
+display: none;
+float: left;
+	width: 50px;
+	margin: 0 10px 10px 0;
+}
+
+a:hover .top_spec{
+	height: 120px;
+	margin-top:-10px;
+	color: #ff0;
+}
+
+a:hover .top_spec img{
+	
+display: block;
+}
+
+a:hover .top_spec .top_spec_text{
+	font-size: 18px;
+		margin-top: 25px;
+}
+
+.top_spec_text{
+	margin-left: 10px;
+	margin-top: 20px;
+	float: left;
+	padding:0;
+	width:85%;
+	font-size: 17px;
+	font-weight: bold;	
+	text-align: left;
+	color: white;
+}
+
+.bottom_spec_text{
+	margin-left: 30px;
+	margin-top: 20%;
+	float: left;
+	padding:0;
+	font-size: 22px;
+	font-weight: bold;	
+	text-align: left;
+	color: #908888;
+	width: 60%;
+}
+
+.bottom_spec_text_right{
+	margin-left: 30px;
+	margin-top: 20%;
+	float: left;
+	padding:0;
+	font-size: 20px;
+	font-weight: normal;	
+	text-align: left;
+	color: #666;
+
+}
